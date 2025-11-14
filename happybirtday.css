@@ -1,0 +1,60 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p {
+  margin: 0 0;
+  position: absolute;
+  font: 16px Verdana;
+  color: #eee;
+  height: 25px;
+  top: calc(100vh - 30px);
+  text-shadow: 0 0 2px white;
+}
+p a {
+  text-decoration: none;
+  color: #aaa;
+}
+span {
+  font-size: 11px;
+}
+p > a:first-of-type {
+  font-size: 20px;
+}
+body {
+  overflow: hidden;
+}
+
+.botao {
+  position: fixed;
+  bottom: 20px;      /* distância do fundo */
+  right: 20px;       /* distância da direita */
+  
+  width: 60px;
+  height: 60px;
+  background-color: #7b2cbf; /* roxo */
+  border-radius: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover */
+.botao:hover {
+  transform: scale(1.1);
+  background-color: #9d4edd;
+}
+
+/* Seta → */
+.botao::before {
+  content: "➜";
+}
